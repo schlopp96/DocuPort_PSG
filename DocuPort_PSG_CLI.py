@@ -133,6 +133,7 @@ def debugger() -> Any:
 def userSettings_API() -> Any:
     load('Opening \"User Settings API\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#user-settings-api'
+    return openURL(url, new=2, autoraise=True)
 
 
 def extensions() -> Any:
@@ -157,8 +158,6 @@ def createMAC() -> Any:
     load('Opening \"Creating a MAC App File\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#creating-a-mac-app-file'
     return openURL(url, new=2, autoraise=True)
-
-
 
 
 #~ ============================= BEGIN PROGRAM ============================= ~#

@@ -1,4 +1,4 @@
-# DocuPort PSG Version-2.0.0-Beta
+# DocuPort PSG Version-2.0.1-Beta
 
 ---
 
@@ -32,7 +32,7 @@ button. Thus, out of my own laziness and disdain for digging through webpages, *
 
 ---
 
-> Added in v2.0.0-Beta Update
+> Added in v2.0.1-Beta update
 
 - The command-line-interface version of the application is entirely self explanatory through on-screen directions.
 - Simply follow the instructions displayed on screen, and you'll be fine!

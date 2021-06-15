@@ -1,4 +1,4 @@
-# #& DocuPort PSG v2.0.0-Beta
+# #& DocuPort PSG v2.0.1-Beta
 #? Simple GUI Script to open user-specified chapter of the Online-Documentation for PySimpleGUI.
 
 from random import choice as rChoice
