@@ -1,4 +1,4 @@
-# DocuPort_PSG Version-1.0.0-Beta
+# DocuPort PSG Version-2.0.0-Beta
 
 ---
 
@@ -12,7 +12,7 @@ button. Thus, out of my own laziness and disdain for digging through webpages, *
 
 ---
 
-## How to use DocuPort_PSG
+## How to use DocuPort PSG
 
 ---
 
@@ -24,14 +24,20 @@ button. Thus, out of my own laziness and disdain for digging through webpages, *
   - To exit or close the app, simply click the "X" at the top of the screen, or the "Exit" button at the bottom of the window.
   - That's it!
 
+![DocuPort PSG](DP_PSG_screenshot.png)
+
 ---
 
-## Screenshots
+## How to use DocuPort PSG - CLI
 
-### ![SS1](2021-03-22-14-33-45.png) ![SS2](2021-03-22-15-06-04.png)
+---
 
-### ![SS3](2021-03-22-15-10-41.png)![SS4](2021-03-22-15-11-48.png)
+> Added in v2.0.0-Beta Update
 
-### ![SS5](2021-03-22-15-12-08.png)![SS6](2021-04-10-03-21-34.png)
+- The command-line-interface version of the application is entirely self explanatory through on-screen directions.
+- Simply follow the instructions displayed on screen, and you'll be fine!
+- The URL menu is re-printed to the console every **5** user-inputs, or if an incorrect input is entered, aka **anything that is not between [1-22]**.
+
+![DocuPort PSG CLI-Version](DP_PSG_CLI_screenshot.png)
 
 ---
