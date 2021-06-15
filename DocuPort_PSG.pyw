@@ -1,8 +1,7 @@
 #
-# Simple GUI Script to open Online-Documentation for PySimpleGUI and redirects the user to the specific documentation chapter desired.
+#? Simple GUI Script to open Online-Documentation for PySimpleGUI and redirects the user to the specific documentation chapter desired.
 
 from random import choice as rChoice
-from sys import exit as ex
 from time import sleep as s
 from webbrowser import open
 
