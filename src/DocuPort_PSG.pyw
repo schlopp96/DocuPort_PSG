@@ -1,14 +1,18 @@
 # #& DocuPort PSG v2.0.1-Beta
 #? Simple GUI Script to open user-specified chapter of the Online-Documentation for PySimpleGUI.
-
+#? =============================== Libraries =============================== ?#
 from random import choice as rChoice
 from time import sleep as s
+from typing import Any
 from webbrowser import open
 
 import PySimpleGUI as sg
 
+#? ========================================================================= ?#
+#& =============================== Functions =============================== &#
 
-def randomTheme():
+
+def randomTheme() -> Any:
     """Randomizes Program Color Theme on Launch.
     
     - Includes EVERY* available default theme by simply calling a random-choice funcion to pick from a list.
@@ -190,12 +194,14 @@ def open_PSGUI(
     return open(url, new=2, autoraise=True)
 
 
+#& ========================================================================= &#
+#^ ================================ Layouts ================================ ^#
 winlayout = [
     [  #* Top Row Text
-        sg.Text(
-            'Choose a Chapter/Section of the PySimpleGUI Documentation to Browse',
-            auto_size_text=True,
-            key='-TEXT_TOP-')
+        sg.Text('Choose Section from PySimpleGUI Docs to Browse',
+                auto_size_text=True,
+                key='-TEXT_TOP-',
+                justification='Center')
     ],
     [  #* Option Menu & Open URL Buttons
         sg.OptionMenu(
@@ -209,20 +215,25 @@ winlayout = [
                 'Debug', 'User Settings API', 'Extensions', 'Demo Apps',
                 'Create .EXE', 'Create .MAC'
             ],
-            default_value='Homepage'),
-        sg.Button('Open Chapter', key='-OPEN_URL-')
+            default_value='Homepage',
+            tooltip='Choose a topic to browse.'),
+        sg.Button('Open Section',
+                  key='-OPEN_URL-',
+                  tooltip='Opens selection using default browser.')
     ],
     [sg.Exit()],
 ]  #* Exit Button
 
+#^ Displays Window
 window_MAIN = sg.Window(title='DocuPort_PSG',
                         layout=winlayout,
                         element_justification='Center',
                         auto_size_buttons=True,
-                        element_padding=(5, 5),
+                        keep_on_top=True,
+                        element_padding=(2, 2),
                         margins=((5, 5)))
-#^ Displays Window
-
+#^ ========================================================================= ^#
+#* ============================= Window Events ============================= *#
 while True:  #* The Infinite Loop that keeps the Window open, and returns feedback from the user.
     event, values = window_MAIN.read()
     #print(event, values)  #NOTE: #? Enable to print stdout to console.
@@ -292,7 +303,7 @@ while True:  #* The Infinite Loop that keeps the Window open, and returns feedba
                 values['-OPTION_MENU-'],
                 'https://pysimplegui.readthedocs.io/en/latest/#layouts')
 
-        if values['-OPTION_MENU-'] == '-Elements-':
+        if values['-OPTION_MENU-'] == 'Elements':
             open_PSGUI(
                 values['-OPTION_MENU-'],
                 'https://pysimplegui.readthedocs.io/en/latest/#elements')
@@ -366,6 +377,7 @@ while True:  #* The Infinite Loop that keeps the Window open, and returns feedba
             )
 
     window_MAIN['-TEXT_TOP-'].update(
-        'Choose a Chapter/Section of the Documentation to Browse')
+        'Choose Section from PySimpleGUI Docs to Browse')
 
 window_MAIN.close()
+#* ========================================================================= *#
