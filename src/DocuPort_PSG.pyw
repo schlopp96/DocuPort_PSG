@@ -225,7 +225,7 @@ winlayout = [
 ]  #* Exit Button
 
 #^ Displays Window
-window_MAIN = sg.Window(title='DocuPort_PSG',
+window_MAIN = sg.Window(title='DocuPort PSG',
                         layout=winlayout,
                         element_justification='Center',
                         auto_size_buttons=True,
