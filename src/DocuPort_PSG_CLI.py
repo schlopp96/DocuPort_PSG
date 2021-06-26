@@ -8,156 +8,156 @@ from time import sleep as s
 
 
 def drawMenu() -> None:
-    print('''\t      ___________Menu___________
-             | 1. Homepage              |
-             | 2. Getting Started       |
-             | 3. DemoScreenshots       |
-             | 4. Call Reference        |
-             | 5. CookBook              |
-             | 6. ReadMe                |
-             | 7. Popups                |
-             | 8. Progress Meters       |
-             | 9. My First Window       |
-             |10. Layouts               |
-             |11. Elements              |
-             |12. System Tray Icons     |
-             |13. Keyboard/Mouse Capture|
-             |14. Menus                 |
-             |15. Running Mult. Windows |
-             |16. Debugging PySimpleGUI |
-             |17. User Settings API     |
-             |18. Extending PYSimpleGUI |
-             |19. Demo Apps             |
-             |20. Create .EXE File      |
-             |21. Create MAC File       |
-             |22. EXIT                  |
-             |__________________________|''')
+    print(""" ___________Menu___________
+| 1. Homepage              |
+| 2. Getting Started       |
+| 3. DemoScreenshots       |
+| 4. Call Reference        |
+| 5. CookBook              |
+| 6. ReadMe                |
+| 7. Popups                |
+| 8. Progress Meters       |
+| 9. My First Window       |
+|10. Layouts               |
+|11. Elements              |
+|12. System Tray Icons     |
+|13. Keyboard/Mouse Capture|
+|14. Menus                 |
+|15. Running Mult. Windows |
+|16. Debugging PySimpleGUI |
+|17. User Settings API     |
+|18. Extending PYSimpleGUI |
+|19. Demo Apps             |
+|20. Create .EXE File      |
+|21. Create MAC File       |
+|22. EXIT                  |
+|__________________________|""")
 
 
-def homepage() -> Any:
+def homepage() -> None:
     load('Opening PySimpleGUI Homepage', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def gettingStarted() -> Any:
+def gettingStarted() -> None:
     load('Opening Docs Chapter: \"Getting Started\"', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#getting-started-with-pysimplegui'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def demoScreenshots() -> Any:
+def demoScreenshots() -> None:
     load('Opening Demo Screenshots', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/screenshots_demos/'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def callReference() -> Any:
+def callReference() -> None:
     load('Opening Call Reference', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/call%20reference/'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def cookbook() -> Any:
+def cookbook() -> None:
     load('Opening PySimpleGUI Cookbook', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/cookbook/'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def readme() -> Any:
+def readme() -> None:
     load('Opening PySimpleGUI Readme', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/readme/'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def popups() -> Any:
+def popups() -> None:
     load('Opening \"Popups\" PSG Doc Chapter', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#high-level-api-calls-popups'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def progressMeters() -> Any:
+def progressMeters() -> None:
     load('Opening ', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#progress-meters'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def customWindows() -> Any:
+def customWindows() -> None:
     load('Opening \"Custom Windows\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#custom-window-api-calls-your-first-window'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def layouts() -> Any:
+def layouts() -> None:
     load('Opening \"Layouts\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#layouts'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def elements() -> Any:
+def elements() -> None:
     load('Opening \"Elements\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#elements'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def systemTray() -> Any:
+def systemTray() -> None:
     load('Opening \"System Tray\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#systemtray'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def keyboardMouse_Cap() -> Any:
+def keyboardMouse_Cap() -> None:
     load('Opening \"Keyboard/Mouse Capture\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#keyboard-mouse-capture'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def menus() -> Any:
+def menus() -> None:
     load('Opening \"Menus\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#menud'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def multipleWindows() -> Any:
+def multipleWindows() -> None:
     load('Opening \"Running Multiple Windows\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#running-multiple-windows'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def debugger() -> Any:
+def debugger() -> None:
     load('Opening \"The PySimpleGUI Debugger\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#the-pysimplegui-debugger'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def userSettings_API() -> Any:
+def userSettings_API() -> None:
     load('Opening \"User Settings API\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#user-settings-api'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def extensions() -> Any:
+def extensions() -> None:
     load('Opening \"Extending PySimpleGUI\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#extending-pysimplegui'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def demoApps() -> Any:
+def demoApps() -> None:
     load('Opening \"\'Demo Programs\' Applications\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#demo-programs-applications'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def createEXE() -> Any:
+def createEXE() -> None:
     load('Opening \"Creating a Windows .EXE File\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#creating-a-windows-exe-file'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
-def createMAC() -> Any:
+def createMAC() -> None:
     load('Opening \"Creating a MAC App File\" Doc Section', 'Done!')
     url = r'https://pysimplegui.readthedocs.io/en/latest/#creating-a-mac-app-file'
-    return openURL(url, new=2, autoraise=True)
+    openURL(url, new=2, autoraise=True)
 
 
 #~ ============================= BEGIN PROGRAM ============================= ~#
@@ -165,7 +165,7 @@ inputCount: int = 0
 while True:
     if inputCount % 5 == 0:
         drawMenu()
-    menuchoice = str(input('Please ENTER an option between [1-22]:\n> '))
+    menuchoice = str(input('\nPlease ENTER an option between [1-22]:\n> '))
     if menuchoice == '1':
         inputCount += 1
         homepage()
@@ -235,5 +235,5 @@ while True:
         ex(0)
     else:
         inputCount = 0
-        print('\n= ERROR =:\n> Must Enter an Integer between 1 and 22.\n')
+        print('\n- ERROR: -\n> Must Enter an Integer between 1 and 23.\n')
         s(1)
