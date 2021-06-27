@@ -3,7 +3,7 @@
 ---
 
 > - _A PySimpleGUI Online Documentation Portal_
-> - v2.2.0-Beta
+> - v2.2.1-Beta
 
 [PySimpleGUI](https://pysimplegui.readthedocs.io/en/latest/) is an _excellent_ framework for building GUIs quickly, and with ease. Unfortunately, PSG doesn't have any _official_ offline documentation that can be easily downloaded. Instead, the documentation is hosted _online_, where it is changed and updated quite frequently - which is part of the reason the creator maintains the documentation online only.
 
