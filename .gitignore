@@ -139,6 +139,3 @@ cython_debug/
 
 # X-Session COMMIT TAG Notes
 tag-notes.txt
-
-# "Scrap" files
-scrap.py

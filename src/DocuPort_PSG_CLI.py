@@ -235,5 +235,5 @@ while True:
         ex(0)
     else:
         inputCount = 0
-        print('\n- ERROR: -\n> Must Enter an Integer between 1 and 23.\n')
+        print('\n- ERROR: -\n> Must Enter an Integer between 1 and 22.\n')
         s(1)

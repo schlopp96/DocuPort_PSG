@@ -1,4 +1,4 @@
-# #& DocuPort PSG v2.2.0-Beta
+# #& DocuPort PSG v2.3.1-Beta
 #? Simple GUI Script to open user-specified chapter of the Online-Documentation for PySimpleGUI.
 #? =============================== Libraries =============================== ?#
 from random import choice as rChoice
@@ -17,9 +17,11 @@ sg.theme(theme)
 def open_PSGUI(title: str, url: str) -> bool:
     """Open a specific PySimpleGUI documentation section in the user's default browser.
 
-    :param title: | title of the documentation-section selected.
-    :param url: | section URL to open in the user's default browser.
-
+    :param title: title of the documentation-section selected.
+    :type title: (str)
+    :param url: section URL to open in the user's default browser.
+    :type url: (str)
+    :returns: opens new page/tab in browser.
     :rtype: None
     """
     window_MAIN['-TEXT_TOP-'].Update(f'Opening Doc Section: {title}')
@@ -103,7 +105,7 @@ winlayout = [
     #* Exit Button
     [sg.Exit(tooltip='Exit the program.')],
     #* Small Text to Display Current Theme
-    [sg.Text(f'Current Theme: {theme}', font='_ 8')]
+    [sg.Text(f'Current Color Theme: {theme}', font='_ 8')]
 ]
 
 #~ Displays Window:
@@ -121,21 +123,25 @@ while True:  #* The Infinite Loop that keeps the Window open, and returns feedba
     #print(event, values)  #NOTE: #? Enable to print stdout to console.
 
     #! Closes Window upon clicking 'x' or sg.Exit() Button.
-    if (event == sg.WIN_CLOSED or event == 'Exit'):
+    if event in [sg.WIN_CLOSED, 'Exit']:
         break
     if event == '-OPEN_URL-':
         docs_section: str = values['-OPTION_MENU-']
-        if docs_section in menu_choices.keys():
-            action = menu_choices[docs_section]
+        if docs_section in menu_choices:
+            choice = menu_choices[docs_section]
             #^ If chosen option is a function:
-            if callable(action):
-                action()
+            if callable(choice):
+                choice()
             #* If chosen option is a string:
             else:
-                open_PSGUI(title=docs_section, url=action)
-                window_MAIN['-TEXT_TOP-'].Update(
-                    'Choose Topic from PySimpleGUI Docs to Browse')
+                open_PSGUI(title=docs_section, url=choice)
+                s(1.5)
+                window_MAIN['-TEXT_TOP-'].Update('Done!')
+                window_MAIN.Refresh()
                 s(1)
+    window_MAIN['-TEXT_TOP-'].Update(
+        'Choose Topic from PySimpleGUI Docs to Browse')
 
+#! Close program and release computer resources:
 window_MAIN.close()
 #* ========================================================================= *#
