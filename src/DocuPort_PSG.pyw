@@ -1,4 +1,5 @@
-# #& DocuPort PSG v2.3.1-Beta
+#!/usr/bin/env python3
+#& DocuPort PSG v2.3.2-Beta
 #? Simple GUI Script to open user-specified chapter of the Online-Documentation for PySimpleGUI.
 #? =============================== Libraries =============================== ?#
 from random import choice as rChoice
@@ -18,10 +19,10 @@ def open_PSGUI(title: str, url: str) -> bool:
     """Open a specific PySimpleGUI documentation section in the user's default browser.
 
     :param title: title of the documentation-section selected.
-    :type title: (str)
-    :param url: section URL to open in the user's default browser.
-    :type url: (str)
-    :returns: opens new page/tab in browser.
+    :type title: str
+    :param url: URL of the doc-section to open in user's default browser.
+    :type url: str
+    :return: opens new page/tab in browser.
     :rtype: None
     """
     window_MAIN['-TEXT_TOP-'].Update(f'Opening Doc Section: {title}')
@@ -108,7 +109,7 @@ winlayout = [
     [sg.Text(f'Current Color Theme: {theme}', font='_ 8')]
 ]
 
-#~ Displays Window:
+#@ Displays Window:
 window_MAIN = sg.Window(title='DocuPort PSG',
                         layout=winlayout,
                         element_justification='Center',

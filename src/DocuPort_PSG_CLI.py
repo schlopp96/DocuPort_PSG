@@ -1,6 +1,6 @@
-# Primitive script to open Online-Documentation for PySimpleGUI using a console/terminal. #
+#!/usr/bin/env python3
+#> Primitive CLI-Script to Open PySimpleGUI's Online-Documentation Within Your Default Browser. #
 
-from typing import Any
 from webbrowser import open as openURL
 from loadingSequence import load
 from sys import exit as ex
