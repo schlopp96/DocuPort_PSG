@@ -137,9 +137,11 @@ while True:  #* Main event loop.
         docs_section: str = values['-OPTION_MENU-']
         if docs_section in menu_choices:
             choice = menu_choices[docs_section]
+
             #> If chosen option is a valid function:
             if callable(choice):
-                choice() #! Call chosen function.
+                choice() #< Call chosen function.
+
             #* If chosen option is a string variable:
             else:
                 open_PSGUI(title=docs_section, url=choice)
