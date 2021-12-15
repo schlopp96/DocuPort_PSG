@@ -230,7 +230,7 @@ while True:
         inputCount += 1
         createMAC()
     elif menuchoice == '22':
-        load('Exiting', 'GoodBye!')
+        load('Exiting', 'GoodBye!', False)
         s(0.2)
         ex(0)
     else:
