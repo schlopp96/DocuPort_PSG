@@ -2,7 +2,7 @@
 #> Primitive CLI-Script to Open PySimpleGUI's Online-Documentation Within Your Default Browser. #
 
 from webbrowser import open as openURL
-from loadingSequence import load
+from loadSequence import load
 from sys import exit as ex
 from time import sleep as s
 
