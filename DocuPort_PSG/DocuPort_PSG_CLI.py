@@ -2,7 +2,7 @@
 #> Primitive CLI-Script to Open PySimpleGUI's Online-Documentation Within Your Default Browser. #
 
 from webbrowser import open as openURL
-from loadSequence import load
+from PyLoadBar import load
 from sys import exit as ex
 from time import sleep as s
 
@@ -230,8 +230,7 @@ while True:
         inputCount += 1
         createMAC()
     elif menuchoice == '22':
-        load('Exiting', 'GoodBye!', False)
-        s(0.2)
+        load('Exiting', 'GoodBye!', enable_display=False)
         ex(0)
     else:
         inputCount = 0

@@ -1,9 +1,6 @@
 # DocuPort - PySimpleGUI
 
-> **_A.k.a. DocuPort PSG_**
->
 > - _A PySimpleGUI Online Documentation Portal_
-> - v2.3.3b
 
 ---
 
@@ -31,9 +28,9 @@ As a result, users must go online anytime the documentation is needed, which is 
   - To exit or close the app, simply click the "X" at the top of the screen, or the "Exit" button at the bottom of the window.
   - **_That's it!_**
 
-    ![DocuPort PSG](DP_PSG_screenshot.png)
+    ![DocuPort PSG](./docs/DP_PSG_screenshot.png)
 
-    ![DocuPort PSG](DP_PSG_screenshot2.png)
+    ![DocuPort PSG](./docs/DP_PSG_screenshot2.png)
 
 ---
 
@@ -47,6 +44,6 @@ As a result, users must go online anytime the documentation is needed, which is 
 - Simply follow the instructions displayed on screen, and you'll be fine!
 - The URL menu is **re-printed to the console every 5 user-inputs, or if user-input is anything that is not between [1-22]** _(e.g. if an incorrect input is entered)_.
 
-  ![DocuPort PSG CLI-Version](DP_PSG_CLI_screenshot.png)
+  ![DocuPort PSG CLI-Version](./docs/DP_PSG_CLI_screenshot.png)
 
 ---
