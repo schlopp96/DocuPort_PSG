@@ -114,7 +114,7 @@ def keyboardMouse_Cap() -> None:
 
 def menus() -> None:
     load('Opening \"Menus\" Doc Section', 'Done!')
-    url = r'https://pysimplegui.readthedocs.io/en/latest/#menud'
+    url = r'https://pysimplegui.readthedocs.io/en/latest/#menus'
     openURL(url, new=2, autoraise=True)
 
 
